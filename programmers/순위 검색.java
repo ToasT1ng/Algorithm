@@ -9,6 +9,10 @@ class Solution {
             String[] eachTinyInfo = eachInfo.split(" ");
             recursion(eachTinyInfo, 0, "");
         }
+        for (String key : queryMap.keySet()) {
+            List<Integer> score = queryMap.get(key);
+        	Collections.sort(score);
+        }
         for (int i=0 ; i<query.length ; i++) {
             answer[i] = 0;
             
@@ -16,10 +20,14 @@ class Solution {
             int lastIndent = currentQuery.lastIndexOf(" ");
             
             String key = currentQuery.substring(0, lastIndent);
+            key = key.replaceAll(" and ", " ");
             int scoreValue = Integer.parseInt(currentQuery.substring(lastIndent+1));
             
             if (queryMap.containsKey(key)) {
-                answer[i] = search(queryMap.get(key), scoreValue);
+                List<Integer> score = queryMap.get(key);
+                if (score.size() > 0) {
+                    answer[i] = search(score, scoreValue);
+                }
             }
         }
         return answer;
@@ -27,11 +35,8 @@ class Solution {
     
     public void recursion(String[] eachTinyInfo, int tinyInfoIndex, String queryMapKey) {
         if (tinyInfoIndex == 4) {
-            queryMapKey = queryMapKey.replaceAll(" ", " and ");
-            
             List<Integer> score = queryMap.getOrDefault(queryMapKey, new ArrayList<>());
             score.add(Integer.parseInt(eachTinyInfo[tinyInfoIndex]));
-            Collections.sort(score);
             queryMap.put(queryMapKey, score);
             return ;
         }
