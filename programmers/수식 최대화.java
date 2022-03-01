@@ -8,46 +8,47 @@ class Solution {
         long answer = 0;
         
         // 1. * + - 의 우선순위 만들기
-        // 2. 우선순위대로 계산하여 최대 절댓값 찾기
+        // 2. 우선순위대로 계산하여 최대 절댓값 찾기 
         //  2-1. split 사용해서 number 와 연산자 분리
-        //  
+        //  2-2. 우선순위대로 계산해가면서 list 줄여나가기 (우선순위 리스트 반복)
         
+        // 1
         String[] command = {"*", "+", "-"};
         boolean[] visited = new boolean[3];
         makePriority(0, command, visited, "");
         
+        // 2-1
         List<String> commandList = new ArrayList<>(Arrays.asList(expression.split("[0-9]+")));
         commandList.remove(0);
         List<String> numberList = new ArrayList<>(Arrays.asList(expression.split("[*,+,-]")));
         
-        int largestValue = 0;
+        // 2-2
+        long largestValue = 0;
         
         for (String commandStrings : priorityOfCommand) {
             List<String> tempCommandList = new ArrayList<>(commandList);
             List<String> tempNumberList = new ArrayList<>(numberList);
             char[] commandArray = commandStrings.toCharArray();
-            int commandIndex = 0;
             
-            while (tempCommandList.size() != 0) {   
+            
+            for (int commandIndex = 0 ; tempCommandList.size() != 0 ; commandIndex++) {   
                 String currentCommand = String.valueOf(commandArray[commandIndex]);
                 int iteration = tempCommandList.size();
-                int i=0;
-                while (i<iteration) {
+                
+                for (int i=0 ; i<iteration ; i++) {
                     if (tempCommandList.get(i).equals(currentCommand)) {
                         iteration--;
-                        int computeValue = compute(tempNumberList.get(i), tempNumberList.get(i+1), currentCommand);
+                        long computeValue = compute(tempNumberList.get(i), tempNumberList.get(i+1), currentCommand);
                         tempCommandList.remove(i);
                         tempNumberList.set(i, String.valueOf(computeValue));
                         tempNumberList.remove(i+1);
                         i--;
                     }
-                    i++;
                 }
 
-                commandIndex++;
             }
 
-            largestValue = Math.max(Math.abs(Integer.parseInt(tempNumberList.get(0))), largestValue);
+            largestValue = Math.max(Math.abs(Long.parseLong(tempNumberList.get(0))), largestValue);
         }
         
         
@@ -70,13 +71,13 @@ class Solution {
         }
     }
     
-    public int compute(String a, String b, String command) {
+    public long compute(String a, String b, String command) {
         if (command.equals("+")) {
-            return Integer.parseInt(a) + Integer.parseInt(b);
+            return Long.parseLong(a) + Long.parseLong(b);
         } else if (command.equals("-")) {
-            return Integer.parseInt(a) - Integer.parseInt(b);
+            return Long.parseLong(a) - Long.parseLong(b);
         } else {
-            return Integer.parseInt(a) * Integer.parseInt(b);
+            return Long.parseLong(a) * Long.parseLong(b);
         }
         
     }
