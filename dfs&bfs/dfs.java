@@ -37,11 +37,9 @@ class Solution {
 	// 3
 
 	public void dfs_limit(int index, int[] input) {
+		boolean[] visited = new boolean[input.length];
 		for (int i=0 ; i<input.length ; i++) {
-			boolean[] visited = new boolean[input.length];
-			for (int j=0 ; j<=i ; j++) {
-				visited[j] = true;
-			}
+			visited[i] = true;
 			String result = String.valueOf(input[i]);
 			dfs_all(i+1, input, visited, result);
 		}
