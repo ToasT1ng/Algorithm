@@ -43,27 +43,9 @@ class Solution {
 				visited[j] = true;
 			}
 			String result = String.valueOf(input[i]);
-			dfs_all2(i+1, input, visited, result);
+			dfs_all(i+1, input, visited, result);
 		}
 	}
-
-	public void dfs_all2(int index, int[] input, boolean[] visited, String result) {
-		if (index >= input.length) {
-			System.out.println(result);
-			return;
-		}
-		for (int i=0 ; i<input.length ; i++) {
-			if (!visited[i]) {
-				visited[i] = true;
-				int beforeLength = result.length();
-				result += String.valueOf(input[i]);
-				dfs_all2(index+1, input, visited, result);
-				result = result.substring(0, beforeLength);
-				visited[i] = false;
-			}
-		}
-	}
-
 }
 
 class RunClass {
