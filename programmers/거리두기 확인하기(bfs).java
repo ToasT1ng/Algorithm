@@ -1,97 +1,84 @@
 import java.util.*;
 
-class Solution {
-    public int[] solution(String[][] places) {
-        int[] answer = new int[places.length];
-        for (int i=0 ; i<places.length ; i++) {
-            int isOkay = 1;
-            for (int x=0 ; x<places[i].length ; x++) {
-                String[] currentRoom = places[i];
-                for (int y=0 ; y<currentRoom[x].length() ; y++) {
-                    if (isPerson(currentRoom, x, y) ) {
-                        if (!check(currentRoom, x, y)) {
-                            isOkay = 0;
-                            break;
-                        }
-                        
-                    }
-                }
-                if (isOkay == 0) {
-                    break;
-                }
-            }
-            answer[i] = isOkay;
-        }
-        return answer;
+class Coordinate {
+    int x;
+    int y;
+    public Coordinate(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
     
-    int[] xPos = {-1,1,0,0};
-    int[] yPos = {0,0,-1,1};
-    
+    @Override
+    public String toString() {
+        return "{x=" + x + ",y=" + y + "}";
+    }
 
-    public boolean check(String[] currentRoom, int firstX, int firstY) {
-        boolean[][] visited =  new boolean[5][5];
-        Queue<Coordinate> coordQueue = new LinkedList<>();
-        coordQueue.offer(new Coordinate(firstX, firstY));
-        visited[firstX][firstY] = true;
-        
-        while (!coordQueue.isEmpty()) {
-            Coordinate currentCoord = coordQueue.poll();
-        
-            for (int i=0 ; i<4 ; i++) {   
-                int nextX = currentCoord.x + xPos[i];
-                int nextY = currentCoord.y + yPos[i];
-                int distance = Math.abs(firstX - nextX) + Math.abs(firstY - nextY);
+}
+
+
+class Solution {
+    public int[] solution(String[][] places) {
+        ArrayList<Integer> answer = new ArrayList<>();
+        for (String[] each : places) {
+            answer.add(check(each));
+        }
+        return answer.stream().mapToInt(i->i).toArray();
+    }
+
+    int[] nx = {1,0,-1,0};
+    int[] ny = {0,1,0,-1};
+
+    public int check(String[] eachPlace) {
+        int xLength = eachPlace[0].length();
+        int yLength = eachPlace.length;
+        for (int i=0 ; i<xLength ; i++) {
+            for (int j=0 ; j<yLength ; j++) {
+                if (isPerson(eachPlace, new Coordinate(i, j))) {
+                    if (!bfs(new boolean[xLength][yLength], eachPlace, i, j)) return 0;
+                }
+            }
+        }
+        return 1;
+    }
+
+    public boolean bfs(boolean[][] visited, String[] eachPlace, int x, int y) {
+        Queue<Coordinate> queue = new LinkedList<>();
+        Coordinate firstCoord = new Coordinate(x,y);
+        queue.offer(firstCoord);
+        visited[x][y] = true;
+        while (!queue.isEmpty()) {
+            Coordinate current = queue.poll();
+            for (int i=0 ; i<4 ; i++) {
+                int nextX = current.x + nx[i];
+                int nextY = current.y + ny[i];
+                Coordinate nextCoordinate = new Coordinate(nextX, nextY);
+                int distance = getDistance(firstCoord, nextCoordinate);
                 if (nextX < 0 || nextX >= 5 || nextY < 0 || nextY >= 5 || visited[nextX][nextY] || distance > 2) {
                     continue;
                 }
                 
                 visited[nextX][nextY] = true;
                 
-                if (isPartition(currentRoom, nextX, nextY)) {
-                    continue;
-                }
-                if (isPerson(currentRoom, nextX, nextY)) {
-                    return false;
-                }
-                if (isTable(currentRoom, nextX, nextY)) {
-                    coordQueue.offer(new Coordinate(nextX, nextY));
+                if (isPerson(eachPlace, nextCoordinate)) {
+                    return false; 
+                } else if (isTable(eachPlace, nextCoordinate)) {
+                    queue.offer(nextCoordinate);
                 }
             }
         }
-        
-        
         return true;
     }
     
-    private class Coordinate {
-        public int x;
-        public int y;
-        public Coordinate(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
+    public boolean isPerson(String[] eachPlace, Coordinate next) {
+        return eachPlace[next.x].charAt(next.y) == 'P'? true : false;
     }
     
-    private boolean isPerson(String[] currentRoom, int x, int y) {
-        return isThis(currentRoom[x].charAt(y), 'P');
+    public boolean isTable(String[] eachPlace, Coordinate next) {
+        return eachPlace[next.x].charAt(next.y) == 'O'? true : false;
+    }
+    
+    public int getDistance(Coordinate c1, Coordinate c2) {
+        return Math.abs(c1.x-c2.x) + Math.abs(c1.y-c2.y);
     }
 
-    
-    private boolean isThis(char character, char compareCharacter) {
-        if (character == compareCharacter) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-    
-    
-    private boolean isPartition(String[] currentRoom, int x, int y) {
-        return isThis(currentRoom[x].charAt(y), 'X');
-    }
-    
-    private boolean isTable(String[] currentRoom, int x, int y) {
-        return isThis(currentRoom[x].charAt(y), 'O');
-    }
 }
