@@ -1,44 +1,27 @@
 // https://programmers.co.kr/learn/courses/30/lessons/12899
 
-import java.util.*;
-
 class Solution {
     public String solution(int n) {
         String answer = "";
-        
-        int temp = n;
-        int front = temp / 3;
-        int back = temp % 3;
-        if (back == 0) {
-            front--;
-        }
-        answer = converter(back) + answer;
-        
-        while (front >= 3) {
-            temp = front;
-            front = temp / 3;
-            back = temp % 3;
-            if (back == 0) {
-                front--;
+        while (n >= 3) {
+            int num = n % 3;
+            if (num == 0) {
+                n--;
             }
-            answer = converter(back) + answer;
-            
+            answer = converter(num) + answer;
+            n /= 3;
         }
-        
-        if (front != 0) {
-            answer = converter(front) + answer;
-        }
-        
-        return answer;
+        if (n != 0) answer = converter(n) + answer;
+        return String.valueOf(answer);
     }
     
-    public String converter(int number) {
-        if (number == 0) {
-            return Integer.toString(4);
-        } else if (number < 0) {
+    public String converter(int num) {
+        if (num == 0) {
+            return String.valueOf(4);
+        } else if (num < 0) {
             return "";
         } else {
-            return Integer.toString(number);
+            return String.valueOf(num);
         }
     }
 }
