@@ -2,31 +2,39 @@
 
 import java.util.*;
 
+class Progress {
+    int day;
+    int jobAmount;
+    public Progress(int day, int jobAmount) {
+        this.day = day;
+        this.jobAmount = jobAmount;
+    }
+    
+    public String toString() {
+        return "{day=" + this.day + ",jobAmount=" + this.jobAmount + "}";
+    }
+}
+
 class Solution {
     public int[] solution(int[] progresses, int[] speeds) {
-        ArrayList<Integer> answer = new ArrayList<>();
-        Queue<Integer> queue = new LinkedList<>();
+        Stack<Progress> stack = new Stack<>();
         for (int i=0 ; i<progresses.length ; i++) {
-            int duration = (100 - progresses[i]) / speeds[i];
+            int progress = progresses[i];
+            
+            int day = (100 - progresses[i]) / speeds[i];
             if ((100 - progresses[i]) % speeds[i] != 0) {
-                duration++;
+                day++;
             }
-            queue.add(duration);
-        }
-        
-        int save = queue.poll();
-        int count = 1;
-        while(!queue.isEmpty()) {
-            int current = queue.poll();
-            if (current <= save) {
-                count++;
+            
+            if (!stack.isEmpty() && stack.peek().day >= day) {
+                Progress lastProgress = stack.pop();
+                lastProgress.jobAmount += 1;
+                stack.push(lastProgress);
             } else {
-                save = current;
-                answer.add(count);
-                count = 1;
+                stack.push(new Progress(day, 1));
             }
         }
-        answer.add(count);
-        return answer.stream().mapToInt(i->i).toArray();
+
+        return stack.stream().mapToInt(i->i.jobAmount).toArray();
     }
 }
