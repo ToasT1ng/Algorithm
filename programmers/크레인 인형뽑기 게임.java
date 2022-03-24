@@ -2,23 +2,25 @@ import java.util.*;
 
 class Solution {
     public int solution(int[][] board, int[] moves) {
-        int answer = 0;
-        Stack<Integer> stack = new Stack<>();
-        for (int moveIndex = 0 ; moveIndex < moves.length ; moveIndex++) {
-            for (int i=0 ; i<board.length ; i++) {
-                int currentBox = board[i][moves[moveIndex]-1];
-                if (currentBox != 0) {
-                    if (!stack.isEmpty() && stack.peek() == currentBox) {
-                        answer += 2;
-                        stack.pop();
+        Stack<Integer> basket = new Stack<>();
+        int count = 0;
+        for (int eachMove : moves) {
+            int jIndex = eachMove-1;
+            for (int i=0 ; i<board[0].length ; i++) {
+                int currentDoll = board[i][jIndex];
+                if (currentDoll != 0) {
+                    System.out.println(currentDoll);
+                    if (!basket.isEmpty() && basket.peek() == currentDoll) {
+                        basket.pop();
+                        count += 2;
                     } else {
-                        stack.push(currentBox);
-                    }
-                    board[i][moves[moveIndex]-1] = 0;
+                        basket.push(currentDoll);
+                    }   
+                    board[i][jIndex] = 0;
                     break;
                 }
             }
         }
-        return answer;
+        return count;
     }
 }
