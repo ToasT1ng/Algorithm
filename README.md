@@ -15,6 +15,6 @@
 
 
 ## BaekJoon
-|번호|제목|알고리즘/자료구조|
+|제목|난이도|알고리즘/자료구조|
 |------|---|---|
-|[17071](https://github.com/ToasT1ng/Algorithm/blob/main/baekjoon/17071_%EC%88%A8%EB%B0%94%EA%BC%AD%EC%A7%885.java)|[숨바꼭질5](https://www.acmicpc.net/problem/17071)|BFS|
+|[17071_숨바꼭질5](https://github.com/ToasT1ng/Algorithm/blob/main/baekjoon/17071_%EC%88%A8%EB%B0%94%EA%BC%AD%EC%A7%885.java)|[Gold 1](https://www.acmicpc.net/problem/17071)|BFS|
