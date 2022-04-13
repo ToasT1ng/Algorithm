@@ -1,4 +1,6 @@
 // https://programmers.co.kr/learn/courses/30/lessons/17679
+// Test Case 10
+// 6 6 ["AABBEE", "AAAEEE", "VAAEEV", "AABBEE", "AACCEE", "VVCCEE"] // 32
 
 import java.util.*;
 
@@ -22,12 +24,6 @@ class Solution {
             if (tempAns == 0) break; 
             
         }
-        // for (int i=0 ; i<m ; i++) {
-        //     for (int j=0 ; j<n ; j++) {
-        //         System.out.print(boardChar[i][j]);
-        //     }
-        //     System.out.println();
-        // }
         return answer;
     }
     
@@ -35,20 +31,23 @@ class Solution {
         for (int i=0 ; i<visited.length ; i++) {
             for (int j=0 ; j<visited[i].length ; j++) {
                 if (isAbleToGetChar(i,j,visited.length,visited[i].length)) {
+                    boolean flag = true;
                     char currentChar = boardChar[i][j];
-                    if (Character.compare(currentChar, ' ') == 0) continue;
-                    char right = boardChar[i+nextI[0]][j+nextJ[0]];
-                    char down = boardChar[i+nextI[1]][j+nextJ[1]];
-                    char cross = boardChar[i+nextI[2]][j+nextJ[2]];
-                    if (Character.compare(currentChar, right) == 0 && Character.compare(currentChar, down) == 0 
-                        && Character.compare(currentChar, cross) == 0) {
+                    if (Character.compare(currentChar, '0') == 0 || Character.isLowerCase(currentChar)) continue;
+                    for (int index = 0 ; index<3 ; index++) {
+                        char current = boardChar[i+nextI[index]][j+nextJ[index]];
+                        if (Character.compare(currentChar, current) != 0) {
+                            flag = false;
+                            break;
+                        }
+                    }
+                    if (flag) {
                         visited[i][j] = true;
-                        visited[i+nextI[0]][j+nextJ[0]] = true;
-                        visited[i+nextI[1]][j+nextJ[1]] = true;
-                        visited[i+nextI[2]][j+nextJ[2]] = true;
+                        for (int index = 0 ; index<3 ; index++) {
+                            visited[i+nextI[index]][j+nextJ[index]] = true;
+                        }
                     }
                 }
-                    
             }
         }
     }
@@ -62,40 +61,20 @@ class Solution {
     }
     
     public int eraseBlocks(boolean[][] visited, char[][] boardChar) {
+        int erasingBlocks = 0;
         for (int i=0 ; i<visited.length ; i++) {
             for (int j=0 ; j<visited[i].length ; j++) {
-                if (visited[i][j]) boardChar[i][j] = ' ';
-            }
-        }
-        
-        int erasingBlocks = 0;
-        for (int i = visited.length-1 ; i>=0 ; i--) {
-            for (int j = visited[i].length-1 ; j>=0 ; j--) {
                 if (visited[i][j]) {
-                    int firstEmpty = i;
-                    int firstFriends = i;
-                    for ( ; firstFriends >= 0 && visited[firstFriends][j] ; firstFriends--) { 
-                        visited[firstFriends][j] = false;
-                        erasingBlocks++;
-                    }
-                    for ( ; firstFriends >= 0 && firstEmpty > firstFriends; firstFriends--, firstEmpty--) {
-                        char friends = boardChar[firstFriends][j];
-                        if (Character.compare(friends, ' ') == 0) firstFriends++;
-                        boardChar[firstFriends][j] = boardChar[firstEmpty][j];
-                        boardChar[firstEmpty][j] = friends;
+                    erasingBlocks++;
+                    visited[i][j] = false;
+                    for (int k = i-1; k >= 0; k--) {
+                        boardChar[k+1][j] = boardChar[k][j];
+                        boardChar[k][j] = '0';
                     }
                 }
             }
         }
+        
         return erasingBlocks;
     }
-    
-    // AA
-    // A
-    // CC
-    // A
-    // A
-    // DC
-    
-    
 }
