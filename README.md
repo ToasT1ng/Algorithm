@@ -4,6 +4,7 @@
 |제목|난이도|알고리즘/자료구조|
 |------|---|---|
 |[124 나라의 숫자](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/124%20%EB%82%98%EB%9D%BC%EC%9D%98%20%EC%88%AB%EC%9E%90.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/12899)|구현|
+|[[1차] 프렌즈4블록](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%5B1%EC%B0%A8%5D%20%ED%94%84%EB%A0%8C%EC%A6%884%EB%B8%94%EB%A1%9D.java)|[Level 2??](https://programmers.co.kr/learn/courses/30/lessons/17679)|구현|
 |[거리두기 확인하기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EA%B1%B0%EB%A6%AC%EB%91%90%EA%B8%B0%20%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0(bfs).java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/81302)|BFS|
 |[게임 맵 최단거리](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EA%B2%8C%EC%9E%84%20%EB%A7%B5%20%EC%B5%9C%EB%8B%A8%EA%B1%B0%EB%A6%AC(*).java)|[Level 2??](https://programmers.co.kr/learn/courses/30/lessons/1844)|BFS|
 |[기능개발](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EA%B8%B0%EB%8A%A5%EA%B0%9C%EB%B0%9C.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/42586)|Stack|
