@@ -20,3 +20,30 @@ class Solution {
         }
     }
 }
+
+// 22 05 09
+// import java.util.*;
+
+// class Solution {
+// 	int answer = 0;
+// 	public int solution(int[] numbers, int target) {
+// 		dfs(0, numbers, new boolean[numbers.length], target, 0);	
+// 		return answer;
+// 	}
+
+// 	public void dfs(int pos, int[] numbers, boolean[] visited, int target, int result) {
+// 		for (int i=pos ; i<numbers.length ; i++) {
+// 			if (!visited[i]) {
+// 				visited[i] = true;
+// 				result += numbers[i];
+				
+// 				dfs(i+1, numbers, visited, target, result);
+
+// 				result -= numbers[i];
+// 				result -= numbers[i];
+// 				visited[i] = false;
+// 			}
+// 		}
+//         if (result == target) answer++; 
+// 	}
+// }
