@@ -45,3 +45,62 @@ class Solution {
         answer = Math.max(answer, result);
     }
 }
+
+
+// 22 05 09
+// import java.util.*;
+
+// class Dungeon implements Comparable<Dungeon>{
+// 	int min;
+// 	int consume;
+// 	public Dungeon(int min, int consume) {
+// 		this.min = min;
+// 		this.consume = consume;
+// 	}
+
+// 	@Override
+// 	public int compareTo(Dungeon d) {
+// 		if (this.min < d.min) {
+// 			return 1;
+// 		} else {
+// 			return -1;
+// 		}
+// 	}
+
+// 	@Override
+// 	public String toString() {
+// 		return "{min=" + min + ", consume=" + consume + "}";
+// 	}
+// }
+
+// class Solution {
+//     int max = 0;
+// 	public int solution(int k, int[][] dungeons) {
+// 		List<Dungeon> list = new ArrayList<>();
+// 		for (int i=0 ; i<dungeons.length ; i++) {
+//             if (dungeons[i][0] <= k) list.add(new Dungeon(dungeons[i][0], dungeons[i][1]));
+// 		}
+// 		Collections.sort(list);
+		
+//         dfs(0, list, k, new boolean[list.size()], 0);
+//         return max;
+// 	}
+    
+//     public void dfs(int pos, List<Dungeon> list, int restOfTired, boolean[] visited, int count) {
+//         for (int i=0 ; i<list.size() ; i++) {
+//             if (!visited[i]) {
+//                 visited[i] = true;
+//                 count++;
+//                 if (restOfTired-list.get(i).min >= 0) {
+//                     restOfTired -= list.get(i).consume;
+//                     dfs(pos+1, list, restOfTired, visited, count);
+//                     restOfTired += list.get(i).consume;
+//                 }
+//                 count--;
+//                 visited[i] = false;
+//             }
+//         }
+//         max = Math.max(max, count);
+//     }
+
+// }
