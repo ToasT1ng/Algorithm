@@ -24,7 +24,7 @@
 |[타겟 넘버](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%ED%83%80%EA%B2%9F%20%EB%84%98%EB%B2%84.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/43165)|DFS|
 |[피로도](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%ED%94%BC%EB%A1%9C%EB%8F%84.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/87946)|DFS|
 |[피보나치 수](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98%20%EC%88%98.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/12945)|구현|
-|[햄버거 만들기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%ED%96%84%EB%B2%84%EA%B1%B0%20%EB%A7%8C%EB%93%A4%EA%B8%B0.java)|[Level 1](https://programmers.co.kr/learn/courses/30/lessons/12945)|Stack|
+|[햄버거 만들기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%ED%96%84%EB%B2%84%EA%B1%B0%20%EB%A7%8C%EB%93%A4%EA%B8%B0.java)|[Level 1](https://school.programmers.co.kr/learn/courses/30/lessons/133502)|Stack|
 |[행렬 테두리 회전하기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%ED%96%89%EB%A0%AC%20%ED%85%8C%EB%91%90%EB%A6%AC%20%ED%9A%8C%EC%A0%84%ED%95%98%EA%B8%B0.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/77485)|구현|
 
 
