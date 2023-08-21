@@ -17,6 +17,7 @@
 |[빛의 경로 사이클](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EB%B9%9B%EC%9D%98%20%EA%B2%BD%EB%A1%9C%20%EC%82%AC%EC%9D%B4%ED%81%B4(*).java)|[Level 2(??)](https://programmers.co.kr/learn/courses/30/lessons/86052)|BFS?|
 |[소수 찾기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EC%86%8C%EC%88%98%20%EC%B0%BE%EA%B8%B0.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/42839)|DFS|
 |[순위 검색](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EC%88%9C%EC%9C%84%20%EA%B2%80%EC%83%89.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/72412)|Hash / Binary Search|
+|[숫자 변환하기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EC%88%AB%EC%9E%90%20%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0.java)|[Level 2](https://school.programmers.co.kr/learn/courses/30/lessons/154538)|Dynamic Programming|
 |[신고 결과 받기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EC%8B%A0%EA%B3%A0%20%EA%B2%B0%EA%B3%BC%20%EB%B0%9B%EA%B8%B0.java)|[Level 1](https://school.programmers.co.kr/learn/courses/30/lessons/92334)|구현|
 |[영어 끝말잇기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EC%98%81%EC%96%B4%20%EB%81%9D%EB%A7%90%EC%9E%87%EA%B8%B0.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/12981)|구현|
 |[크레인 인형뽑기 게임](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%ED%81%AC%EB%A0%88%EC%9D%B8%20%EC%9D%B8%ED%98%95%EB%BD%91%EA%B8%B0%20%EA%B2%8C%EC%9E%84.java)|[Level 1](https://programmers.co.kr/learn/courses/30/lessons/64061)|Stack|
