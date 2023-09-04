@@ -11,6 +11,7 @@
 |[구명보트](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EA%B5%AC%EB%AA%85%EB%B3%B4%ED%8A%B8.java)|[Level 2](https://school.programmers.co.kr/learn/courses/30/lessons/42885)|Greedy|
 |[기능개발](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EA%B8%B0%EB%8A%A5%EA%B0%9C%EB%B0%9C.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/42586)|Stack|
 |[나머지가 1이 되는 수 찾기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EB%82%98%EB%A8%B8%EC%A7%80%EA%B0%80%201%EC%9D%B4%20%EB%90%98%EB%8A%94%20%EC%88%98%20%EC%B0%BE%EA%B8%B0.java)|[Level 1](https://programmers.co.kr/learn/courses/30/lessons/87389)|구현|
+|[네트워크](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC.java)|[Level 3](https://school.programmers.co.kr/learn/courses/30/lessons/43162#)|DFS/BFS|
 |[단체사진 찍기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EB%8B%A8%EC%B2%B4%EC%82%AC%EC%A7%84%20%EC%B0%8D%EA%B8%B0.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/1835)|DFS|
 |[다리를 지나는 트럭](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EB%8B%A4%EB%A6%AC%EB%A5%BC%20%EC%A7%80%EB%82%98%EB%8A%94%20%ED%8A%B8%EB%9F%AD.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/42583)|Queue|
 |[땅따먹기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EB%95%85%EB%94%B0%EB%A8%B9%EA%B8%B0.java)|[Level 2](https://school.programmers.co.kr/learn/courses/30/lessons/12913#)|Dynamic Programming|
@@ -25,6 +26,7 @@
 |[숫자 변환하기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EC%88%AB%EC%9E%90%20%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0.java)|[Level 2](https://school.programmers.co.kr/learn/courses/30/lessons/154538)|Dynamic Programming|
 |[신고 결과 받기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EC%8B%A0%EA%B3%A0%20%EA%B2%B0%EA%B3%BC%20%EB%B0%9B%EA%B8%B0.java)|[Level 1](https://school.programmers.co.kr/learn/courses/30/lessons/92334)|구현|
 |[영어 끝말잇기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EC%98%81%EC%96%B4%20%EB%81%9D%EB%A7%90%EC%9E%87%EA%B8%B0.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/12981)|구현|
+|[정수 삼각형](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EC%A0%95%EC%88%98%20%EC%82%BC%EA%B0%81%ED%98%95.java)|[Level 3](https://school.programmers.co.kr/learn/courses/30/lessons/43105)|Dynamic Programming|
 |[크레인 인형뽑기 게임](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%ED%81%AC%EB%A0%88%EC%9D%B8%20%EC%9D%B8%ED%98%95%EB%BD%91%EA%B8%B0%20%EA%B2%8C%EC%9E%84.java)|[Level 1](https://programmers.co.kr/learn/courses/30/lessons/64061)|Stack|
 |[큰 수 만들기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%ED%81%B0%20%EC%88%98%20%EB%A7%8C%EB%93%A4%EA%B8%B0(*).java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/42883)|Stack|
 |[타겟 넘버](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%ED%83%80%EA%B2%9F%20%EB%84%98%EB%B2%84.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/43165)|DFS|
