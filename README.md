@@ -4,14 +4,16 @@
 |제목|난이도|알고리즘/자료구조|
 |------|---|---|
 |[124 나라의 숫자](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/124%20%EB%82%98%EB%9D%BC%EC%9D%98%20%EC%88%AB%EC%9E%90.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/12899)|구현|
-|[[1차] 프렌즈4블록](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%5B1%EC%B0%A8%5D%20%ED%94%84%EB%A0%8C%EC%A6%884%EB%B8%94%EB%A1%9D.java)|[Level 2??](https://programmers.co.kr/learn/courses/30/lessons/17679)|구현|
+|[N-Queen](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/N-Queen.java)|[Level 2(?)](https://school.programmers.co.kr/learn/courses/30/lessons/12952#)|DFS|
+|[[1차] 프렌즈4블록](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%5B1%EC%B0%A8%5D%20%ED%94%84%EB%A0%8C%EC%A6%884%EB%B8%94%EB%A1%9D.java)|[Level 2(?)](https://programmers.co.kr/learn/courses/30/lessons/17679)|구현|
 |[개인정보 수집 유효기간](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EC%88%98%EC%A7%91%20%EC%9C%A0%ED%9A%A8%EA%B8%B0%EA%B0%84.java)|[Levle 1](https://school.programmers.co.kr/learn/courses/30/lessons/150370)|구현|
 |[거리두기 확인하기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EA%B1%B0%EB%A6%AC%EB%91%90%EA%B8%B0%20%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0(bfs).java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/81302)|BFS|
-|[게임 맵 최단거리](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EA%B2%8C%EC%9E%84%20%EB%A7%B5%20%EC%B5%9C%EB%8B%A8%EA%B1%B0%EB%A6%AC(*).java)|[Level 2??](https://programmers.co.kr/learn/courses/30/lessons/1844)|BFS|
+|[게임 맵 최단거리](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EA%B2%8C%EC%9E%84%20%EB%A7%B5%20%EC%B5%9C%EB%8B%A8%EA%B1%B0%EB%A6%AC(*).java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/1844)|BFS|
 |[구명보트](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EA%B5%AC%EB%AA%85%EB%B3%B4%ED%8A%B8.java)|[Level 2](https://school.programmers.co.kr/learn/courses/30/lessons/42885)|Greedy|
 |[기능개발](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EA%B8%B0%EB%8A%A5%EA%B0%9C%EB%B0%9C.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/42586)|Stack|
 |[나머지가 1이 되는 수 찾기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EB%82%98%EB%A8%B8%EC%A7%80%EA%B0%80%201%EC%9D%B4%20%EB%90%98%EB%8A%94%20%EC%88%98%20%EC%B0%BE%EA%B8%B0.java)|[Level 1](https://programmers.co.kr/learn/courses/30/lessons/87389)|구현|
 |[네트워크](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC.java)|[Level 3](https://school.programmers.co.kr/learn/courses/30/lessons/43162#)|DFS/BFS|
+|[단속카메라](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EB%8B%A8%EC%86%8D%EC%B9%B4%EB%A9%94%EB%9D%BC.java)|[Level 3](https://school.programmers.co.kr/learn/courses/30/lessons/42884)|Greedy|
 |[단어 변환](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EB%8B%A8%EC%96%B4%20%EB%B3%80%ED%99%98.java)|[Level 3](https://school.programmers.co.kr/learn/courses/30/lessons/43163)|DFS|
 |[단체사진 찍기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EB%8B%A8%EC%B2%B4%EC%82%AC%EC%A7%84%20%EC%B0%8D%EA%B8%B0.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/1835)|DFS|
 |[다리를 지나는 트럭](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EB%8B%A4%EB%A6%AC%EB%A5%BC%20%EC%A7%80%EB%82%98%EB%8A%94%20%ED%8A%B8%EB%9F%AD.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/42583)|Queue|
