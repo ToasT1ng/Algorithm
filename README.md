@@ -30,6 +30,7 @@
 |[신고 결과 받기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EC%8B%A0%EA%B3%A0%20%EA%B2%B0%EA%B3%BC%20%EB%B0%9B%EA%B8%B0.java)|[Level 1](https://school.programmers.co.kr/learn/courses/30/lessons/92334)|구현|
 |[영어 끝말잇기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EC%98%81%EC%96%B4%20%EB%81%9D%EB%A7%90%EC%9E%87%EA%B8%B0.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/12981)|구현|
 |[정수 삼각형](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EC%A0%95%EC%88%98%20%EC%82%BC%EA%B0%81%ED%98%95.java)|[Level 3](https://school.programmers.co.kr/learn/courses/30/lessons/43105)|Dynamic Programming|
+|[징검다리 건너기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%EC%A7%95%EA%B2%80%EB%8B%A4%EB%A6%AC%20%EA%B1%B4%EB%84%88%EA%B8%B0.java)|[Level 3](https://school.programmers.co.kr/learn/courses/30/lessons/64062)|Binary Search (Parametric Search)|
 |[크레인 인형뽑기 게임](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%ED%81%AC%EB%A0%88%EC%9D%B8%20%EC%9D%B8%ED%98%95%EB%BD%91%EA%B8%B0%20%EA%B2%8C%EC%9E%84.java)|[Level 1](https://programmers.co.kr/learn/courses/30/lessons/64061)|Stack|
 |[큰 수 만들기](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%ED%81%B0%20%EC%88%98%20%EB%A7%8C%EB%93%A4%EA%B8%B0(*).java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/42883)|Stack|
 |[타겟 넘버](https://github.com/ToasT1ng/Algorithm/blob/main/programmers/%ED%83%80%EA%B2%9F%20%EB%84%98%EB%B2%84.java)|[Level 2](https://programmers.co.kr/learn/courses/30/lessons/43165)|DFS|
